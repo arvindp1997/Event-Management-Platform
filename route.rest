@@ -1,0 +1,39 @@
+GET http://localhost:3000/events
+
+###
+GET http://localhost:3000/events/upcoming
+
+###
+GET http://localhost:3000/events/live
+
+###
+GET http://localhost:3000/events/622093467a30e44915378faf
+
+###
+
+POST http://localhost:3000/events
+Content-Type: application/json
+
+{
+    "eventName": "Play badminton232 dfgdg 123",
+    "eventStartTime": "2022-03-03T11:30:49.760Z" ,
+    "eventDuration": 1000 ,
+    "singleEvent": {
+        "eventStartTime": "2022-03-03T09:32:54.295Z" ,
+   "eventDuration": 2000
+ }
+}
+
+###
+DELETE http://localhost:3000/events/622093367a30e44915378fad
+
+
+
+
+###
+PATCH http://localhost:3000/events/622098eb194451d85e3ae061
+Content-Type: application/json
+
+{
+    "eventName": "new event name"
+}
